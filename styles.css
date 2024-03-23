@@ -1,0 +1,188 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:white; /* Change the background color as needed */
+    color: black; /* Change the text color as needed */
+}
+
+.logo {
+    flex: 1; /* Logo takes up available space */
+    text-align: center; /* Center-align the logo */
+}
+
+nav ul, .right-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li, .right-section ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between navigation links */
+}
+
+nav ul li:last-child, .right-section ul li:last-child {
+    margin-right: 0; /* Remove margin from the last navigation link */
+}
+
+nav ul li a, .right-section ul li a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover, .right-section ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.section1 {
+    position: relative;
+    height: 400px; /* Set the height of your section */
+    overflow: hidden; /* Ensure the background image doesn't overflow */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the background image covers the entire section */
+    height: 100%; /* Ensure the background image covers the entire section */
+    background-image: url('Banner\ image.webp'); /* URL or path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+    overflow:hidden; /* Center the background image */
+     /* Adjust opacity as needed */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the content appears above the background image */
+    text-align: center; /* Center-align content */
+    color: #fff; /* Text color */
+}
+
+.content h1 {
+    font-size: 36px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+
+.search-bar-container {
+    position: relative;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #search-box {
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 8px 0 0 5px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #search-box:focus {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #search-button {
+    
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-button:hover {
+    background-color: #0069d9;
+  }
+  
+  #search-box,
+  #search-button {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif, serif, sans-serif;
+  }
+  
+  #search-button:focus,
+  #search-box:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 4, 0.1);
+  }
+  
+  #search-button:active {
+    background-color: #007bff;
+  }
+  
+  section
+  {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 40px;
+ }
+ .customization-card {
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   margin: 20px;
+   width: 100%;
+   max-width: 300px;
+   position: relative;
+ /* Preserve 3D transformations */
+ }
+ 
+ 
+ 
+ .front,
+ .back {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   backface-visibility: hidden;
+ }
+ 
+ .front {
+   z-index: 2;
+ }
+ 
+ .back {
+   transform: rotateY(180deg);
+   z-index: 1;
+ }
+ 
+ .customization-card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+ }
+ 
+ .customization-card h2 {
+   padding: 20px;
+   margin: 0;
+   font-size: 1.5em;
+   color: #333;
+ }
+ 
+ .customization-card p {
+   padding: 0 20px 20px;
+   margin: 0;
+   color: #777;
+ }
+ 
+
